@@ -5,3 +5,5 @@ calories and a breakdown by major categories: Protein, Carbs, Fat, Sugars, etc.
 
 This call is made as a fulfillment call from within DialogFlow. The food name is parsed from the statement made to the
 bot. The result should be returned to the bot.
+
+This code fails at the API call... Status: Crash TypeError: Request path contains unescaped characters.
