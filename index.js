@@ -14,7 +14,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   let action = request.body.queryResult.action;
 //  const agent = new WebhookClient({ request, response });
   var chat = "here is a sample response: Sample Response";
-  console.log('Inside Main function2');
+  console.log('Inside Main function Part 2');
   console.log(action);
   response.setHeader('Content-Type','application/json');
 
@@ -39,15 +39,15 @@ function getFoodInfo (foodName, CloudFnResponse) {
 
 	var xAppId = "..."; //actual AppID here
 	var xAppKey = "..."; //actual AppKey here
-    var xRemoteUserId = "0";
-    var contentType = "application/json";
+    	var xRemoteUserId = "0";
+    	var contentType = "application/json";
 
   	console.log ('https.get call');
   
 	var request = https.get({
 		host: "trackapi.nutrionix.com",
 		method: "POST",	
-      	path: pathString,
+      		path: pathString,
 		headers: {
             "Content-Type": contentType,
 			"x-app-id": xAppId,
