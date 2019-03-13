@@ -37,8 +37,8 @@ function getFoodInfo (foodName, CloudFnResponse) {
 
 	console.log ('path string: ' + pathString);
 
-	var xAppId = "...";
-	var xAppKey = "...";
+	var xAppId = "..."; //actual AppID here
+	var xAppKey = "..."; //actual AppKey here
     var xRemoteUserId = "0";
     var contentType = "application/json";
 
