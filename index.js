@@ -29,7 +29,7 @@ getFoodInfo (foodName, response);
 
 function getFoodInfo (foodName, CloudFnResponse) {
 
-	console.log('In Function GetFoodInfo Nutrionix');
+	console.log('In Function GetFoodInfo Nutritionix');
 	console.log("food name: " + foodName);
 
 
@@ -45,7 +45,7 @@ function getFoodInfo (foodName, CloudFnResponse) {
   	console.log ('https.get call');
   
 	var request = https.get({
-		host: "trackapi.nutrionix.com",
+		host: "trackapi.nutritionix.com",
 		method: "POST",	
       		path: pathString,
 		headers: {
@@ -68,7 +68,7 @@ function getFoodInfo (foodName, CloudFnResponse) {
 			var jsonData = JSON.parse(json);
 			var chat = jsonData.data[0].value;
 
-			console.log ("Nutrionix Info: " + chat);
+			console.log ("Nutritionix Info: " + chat);
 
 			CloudFnResponse.send(buildChatResponse(chat));
 
